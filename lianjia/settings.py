@@ -26,6 +26,11 @@ MYSQL_DBNAME = 'lianjiadata'
 MYSQL_USER = 'root'
 MYSQL_PASSWD = '123456'
 
+#DOWNLOADER_MIDDLEWARES = {  
+#    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware':None,  
+#    'example.middlewares.RotateUserAgentMiddleware':400,  
+#}  
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -70,7 +75,8 @@ MYSQL_PASSWD = '123456'
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'lianjia.pipelines.LianjiaPipeline': 300,
+    #'lianjia.pipelines.LianjiaPipeline': 300,
+    'lianjia.pipelines.JsonPipeline': 300,
 }
 
 #DOWNLOADER_MIDDLEWARES = {

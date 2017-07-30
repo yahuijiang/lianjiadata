@@ -15,6 +15,16 @@ from hashlib import md5
 import MySQLdb
 import MySQLdb.cursors
 
+class JsonPipeline(object):
+    def __init__(self):
+        self.file = codecs.open('lianjia.json', 'w', encoding='utf-8')
+    def process_item(self, item, spider):
+        line = json.dumps(dict(item), ensure_ascii=False) + "\n"
+        self.file.write(line)
+        return item
+    def spider_closed(self, spider):
+        self.file.close()
+
 class LianjiaPipeline(object):
 
     def __init__(self, dbpool):

@@ -43,14 +43,14 @@ class LianjiaSpider(CrawlSpider):
   #        request.headers.setdefault('User-Agent', ua)
 #    conn = mdb.connect("localhost","root","123456")
     # custom_settings = {'HTTPCACHE_ENABLED': True}
-    start_urls = ['https://bj.lianjia.com/chengjiao/andingmen']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/andingmen']
+    start_urls = ['https://bj.lianjia.com/chengjiao/anzhen1/p1p2p3p4']
 
     #rules = (
     #    Rule(SgmlLinkExtractor(allow='/chengjiao/pinggu/'), callback='next_page'),
    # )
 
     def parse(self, response):
-
         page_url = response.xpath('//@page-url').extract_first()
 	print "the resonse url is:" + page_url
         page_data = response.xpath('//@page-data').extract_first()
@@ -66,6 +66,7 @@ class LianjiaSpider(CrawlSpider):
 	    yield item
 
     def parse_item(self, response):
+	  items = []
           #for house in response.xpath('//ul[@class="listContent"]/li'):
           for house in response.xpath('//div[@class="info"]'):
 	    print house
@@ -87,8 +88,9 @@ class LianjiaSpider(CrawlSpider):
             l.add_xpath('link', './/div[@class="title"]/a/@href')
             l.add_xpath('claim_price', './/div[@class="dealCycleeInfo"]/span/span/text()')
             item = l.load_item()
-	    print "in parse_item:"+item["title"]
-          return item
+	    items.append(item)
+	    #print "in parse_item: "+len(items)
+          return items
 
 
 #if __name__ == '__main__':
