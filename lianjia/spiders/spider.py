@@ -43,7 +43,7 @@ class LianjiaSpider(CrawlSpider):
   #        request.headers.setdefault('User-Agent', ua)
 #    conn = mdb.connect("localhost","root","123456")
     # custom_settings = {'HTTPCACHE_ENABLED': True}
-    start_urls = ['https://bj.lianjia.com/chengjiao/']
+    start_urls = ['https://bj.lianjia.com/chengjiao/andingmen']
 
     #rules = (
     #    Rule(SgmlLinkExtractor(allow='/chengjiao/pinggu/'), callback='next_page'),
@@ -56,7 +56,6 @@ class LianjiaSpider(CrawlSpider):
         page_data = response.xpath('//@page-data').extract_first()
         total_page = eval(page_data)['totalPage']
 	print total_page
-        total_page = 1
         for page in range(1, total_page + 1):
 #	    time.sleep(2)
             rel_url = page_url.format(page=page)
@@ -64,10 +63,12 @@ class LianjiaSpider(CrawlSpider):
 	    print "the second request url is: "+url
             item = scrapy.Request(url=response.urljoin(rel_url), callback=self.parse_item,
                                  headers={'User-Agent': self.ua.random})
-	    return item
+	    yield item
 
     def parse_item(self, response):
-          for house in response.xpath('//ul[@class="listContent"]/li'):
+          #for house in response.xpath('//ul[@class="listContent"]/li'):
+          for house in response.xpath('//div[@class="info"]'):
+	    print house
             l = ItemLoader(item=LianjiaItem(), response=response, selector=house)
             l.default_output_processor = Join()
             l.add_xpath('title', './/div[@class="title"]/a/text()')
@@ -86,8 +87,8 @@ class LianjiaSpider(CrawlSpider):
             l.add_xpath('link', './/div[@class="title"]/a/@href')
             l.add_xpath('claim_price', './/div[@class="dealCycleeInfo"]/span/span/text()')
             item = l.load_item()
-	    
-            return item
+	    print "in parse_item:"+item["title"]
+          return item
 
 
 #if __name__ == '__main__':

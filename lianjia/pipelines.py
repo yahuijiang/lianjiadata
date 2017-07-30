@@ -34,16 +34,17 @@ class LianjiaPipeline(object):
         return cls(dbpool)
 
     def process_item(self, item, spider):
-	print "we are process item"+ item["title"]
+	#print "we are process item"+ item["title"]
 	#d = self.dbpool.runInteraction(self._do_upinsert, item, spider)	
 	#d.addErrback(self._handle_error, item, spider)
 	#d.addBoth(lambda _: item)
+	self.insert(item)
 	return item
 
     #将每行更新或写入数据库中
-    def _do_upinsert(self, conn, item, spider):
-	print item
-    def ii_do_upinsert(self, conn, item, spider):
+    #def _do_upinsert(self, conn, item, spider):
+#	print item
+    def insert(item):
 	#print linkmd5id
 	print "we are writing sql azure"
 	print item

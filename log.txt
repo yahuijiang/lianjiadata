@@ -1,0 +1,845 @@
+2017-07-30 01:10:07 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: lianjia)
+2017-07-30 01:10:07 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'lianjia.spiders', 'SPIDER_MODULES': ['lianjia.spiders'], 'LOG_FILE': 'log.txt', 'BOT_NAME': 'lianjia'}
+2017-07-30 01:10:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-07-30 01:10:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-30 01:10:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-30 01:10:07 [py.warnings] WARNING: /usr/lib/python2.7/site-packages/pkg_resources.py:1054: UserWarning: /home/jasson/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+  warnings.warn(msg, UserWarning)
+
+2017-07-30 01:10:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['lianjia.pipelines.LianjiaPipeline']
+2017-07-30 01:10:07 [scrapy.core.engine] INFO: Spider opened
+2017-07-30 01:10:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-30 01:10:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-30 01:10:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://bj.lianjia.com/chengjiao/andingmen/> from <GET https://bj.lianjia.com/chengjiao/andingmen>
+2017-07-30 01:10:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/> (referer: None)
+2017-07-30 01:10:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg1/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg1/>
+{'claim_price': u'\u6302\u724c930\u4e07 \u6210\u4ea4\u5468\u671f14\u5929',
+ 'deal_date': u'2017.03.28',
+ 'deal_price': u'916',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101101335310.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51717\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c1\u53f7\u9662 2\u5ba41\u5385 67.19\u5e73\u7c73'}
+2017-07-30 01:10:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg21/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg21/>
+{'claim_price': u'\u6302\u724c470\u4e07',
+ 'deal_date': u'2016.03',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91590934.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517112\u5c42) 1990\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 2\u5ba41\u5385 60\u5e73\u7c73'}
+2017-07-30 01:10:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg20/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg20/>
+{'claim_price': u'\u6302\u724c480\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2016.03.12',
+ 'deal_price': u'477',
+ 'direction': u'\u4e1c \u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91679557.html',
+ 'position': u'\u5e95\u5c42(\u517118\u5c42) 1997\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u5317\u8857 2\u5ba42\u5385 66.41\u5e73\u7c73'}
+2017-07-30 01:10:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg19/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg19/>
+{'claim_price': u'\u6302\u724c370\u4e07',
+ 'deal_date': u'2016.04',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90813928.html',
+ 'position': u'\u9876\u5c42(\u51715\u5c42) 1984\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u548c\u5e73\u91cc\u4e2d\u8857 2\u5ba41\u5385 60.71\u5e73\u7c73'}
+2017-07-30 01:10:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg18/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg18/>
+{'claim_price': u'\u6302\u724c385\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2016.04.24',
+ 'deal_price': u'385',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91950871.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517111\u5c42) 1992\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9f13\u697c\u5916\u5927\u885752\u53f7 1\u5ba41\u5385 44.38\u5e73\u7c73'}
+2017-07-30 01:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg17/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg17/>
+{'claim_price': u'\u6302\u724c1230\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2016.05.28',
+ 'deal_price': u'1170',
+ 'direction': u'\u4e1c \u897f | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91644324.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51718\u5c42) 1999\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u6e56\u666f\u82d1 3\u5ba42\u5385 182.29\u5e73\u7c73'}
+2017-07-30 01:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg16/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg16/>
+{'claim_price': u'\u6302\u724c510\u4e07 \u6210\u4ea4\u5468\u671f28\u5929',
+ 'deal_date': u'2016.06.25',
+ 'deal_price': u'495',
+ 'direction': u'\u5317 | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101092289265.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517124\u5c42) 2005\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5df7\u4e0a\u5609\u56ed 1\u5ba41\u5385 64.78\u5e73\u7c73'}
+2017-07-30 01:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg15/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg15/>
+{'deal_date': u'2016.07',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0001986058.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517116\u5c42) 1992\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u516d\u94fa\u7095 --\u5ba4--\u5385 73.51\u5e73\u7c73'}
+2017-07-30 01:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg14/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg14/>
+{'claim_price': u'\u6302\u724c368\u4e07 \u6210\u4ea4\u5468\u671f62\u5929',
+ 'deal_date': u'2016.07.28',
+ 'deal_price': u'337',
+ 'direction': u'\u897f | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101092273639.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 1\u5ba41\u5385 57.26\u5e73\u7c73'}
+2017-07-30 01:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg13/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg13/>
+{'deal_date': u'2016.08',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0002114901.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517112\u5c42) 1988\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5b89\u5916\u5927\u88573\u53f7\u9662 --\u5ba4--\u5385 51.86\u5e73\u7c73'}
+2017-07-30 01:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg12/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg12/>
+{'claim_price': u'\u6302\u724c690\u4e07 \u6210\u4ea4\u5468\u671f152\u5929',
+ 'deal_date': u'2016.08.21',
+ 'deal_price': u'684',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101091822043.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 2\u5ba41\u5385 98.56\u5e73\u7c73'}
+2017-07-30 01:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg11/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg11/>
+{'claim_price': u'\u6302\u724c389\u4e07 \u6210\u4ea4\u5468\u671f190\u5929',
+ 'deal_date': u'2016.08.31',
+ 'deal_price': u'387',
+ 'direction': u'\u4e1c | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101091606028.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 1\u5ba41\u5385 55.92\u5e73\u7c73'}
+2017-07-30 01:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg10/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg10/>
+{'claim_price': u'\u6302\u724c680\u4e07 \u6210\u4ea4\u5468\u671f41\u5929',
+ 'deal_date': u'2016.09.02',
+ 'deal_price': u'670',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101100346879.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u51717\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c1\u53f7\u9662 2\u5ba41\u5385 67.36\u5e73\u7c73'}
+2017-07-30 01:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg9/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg9/>
+{'claim_price': u'\u6302\u724c560\u4e07 \u6210\u4ea4\u5468\u671f198\u5929',
+ 'deal_date': u'2016.09.18',
+ 'deal_price': u'559',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101091682766.html',
+ 'position': u'\u5e95\u5c42(\u517112\u5c42) 1989\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5fb7\u8def\u4e5961\u53f7\u9662 3\u5ba41\u5385 62.64\u5e73\u7c73'}
+2017-07-30 01:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg8/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg8/>
+{'claim_price': u'\u6302\u724c510\u4e07',
+ 'deal_date': u'2016.10',
+ 'direction': u'\u4e1c \u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101092086616.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 1974\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6717\u5bb6\u80e1\u540c24\u53f7\u9662 3\u5ba41\u5385 62\u5e73\u7c73'}
+2017-07-30 01:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg7/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg7/>
+{'claim_price': u'\u6302\u724c1050\u4e07 \u6210\u4ea4\u5468\u671f78\u5929',
+ 'deal_date': u'2016.11.02',
+ 'deal_price': u'970',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101100451598.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517116\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u534e\u5e9c\u666f\u56ed 3\u5ba42\u5385 137.2\u5e73\u7c73'}
+2017-07-30 01:11:07 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 17 pages/min), scraped 16 items (at 16 items/min)
+2017-07-30 01:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg77/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg77/>
+{'claim_price': u'\u6302\u724c252\u4e07',
+ 'deal_date': u'2011.07.29',
+ 'deal_price': u'248',
+ 'direction': u'\u4e1c \u897f | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84516945.html',
+ 'position': u'\u9876\u5c42(\u51716\u5c42) 1988\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u5317\u91cc 2\u5ba41\u5385 77.33\u5e73\u7c73'}
+2017-07-30 01:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg76/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg76/>
+{'claim_price': u'\u6302\u724c163\u4e07',
+ 'deal_date': u'2011.10.09',
+ 'deal_price': u'158',
+ 'direction': u'\u5357 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC00446187.html',
+ 'position': u'\u9876\u5c42(\u51715\u5c42) 1980\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 51.43\u5e73\u7c73'}
+2017-07-30 01:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg75/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg75/>
+{'claim_price': u'\u6302\u724c180\u4e07',
+ 'deal_date': u'2012.02.19',
+ 'deal_price': u'174.3',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84213674.html',
+ 'position': u'\u9876\u5c42(\u51715\u5c42) 1980\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u4e1c\u91cc 3\u5ba41\u5385 59.72\u5e73\u7c73'}
+2017-07-30 01:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg74/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg74/>
+{'deal_date': u'2012.04.22',
+ 'deal_price': u'170',
+ 'direction': u'\u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC00381697.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 1\u5ba41\u5385 55.75\u5e73\u7c73'}
+2017-07-30 01:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg73/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg73/>
+{'claim_price': u'\u6302\u724c190\u4e07',
+ 'deal_date': u'2012.06.10',
+ 'deal_price': u'183',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84608182.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 1979\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 52.47\u5e73\u7c73'}
+2017-07-30 01:11:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg72/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg72/>
+{'claim_price': u'\u6302\u724c245\u4e07',
+ 'deal_date': u'2012.07.21',
+ 'deal_price': u'242',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84470910.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 1990\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u897f\u91cc 2\u5ba41\u5385 60.54\u5e73\u7c73'}
+2017-07-30 01:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg71/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg71/>
+{'claim_price': u'\u6302\u724c320\u4e07',
+ 'deal_date': u'2012.08.30',
+ 'deal_price': u'320',
+ 'direction': u'\u4e1c | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84300411.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517116\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u534e\u5e9c\u666f\u56ed 1\u5ba41\u5385 76.51\u5e73\u7c73'}
+2017-07-30 01:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg70/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg70/>
+{'claim_price': u'\u6302\u724c230\u4e07',
+ 'deal_date': u'2012.11.18',
+ 'deal_price': u'230',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC85168550.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 1990\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9ec4\u5bfa\u5927\u88572\u53f7\u9662 2\u5ba41\u5385 58.02\u5e73\u7c73'}
+2017-07-30 01:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg69/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg69/>
+{'claim_price': u'\u6302\u724c430\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2012.12.14',
+ 'deal_price': u'398',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84923957.html',
+ 'position': u'\u5e95\u5c42(\u51712\u5c42) 1965\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u51c0\u571f\u80e1\u540c5\u53f7\u9662 3\u5ba41\u5385 95.32\u5e73\u7c73'}
+2017-07-30 01:11:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg68/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg68/>
+{'claim_price': u'\u6302\u724c395\u4e07',
+ 'deal_date': u'2013.01.17',
+ 'deal_price': u'390',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC85388518.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517112\u5c42) 2005\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5df7\u4e0a\u5609\u56ed 2\u5ba41\u5385 88.07\u5e73\u7c73'}
+2017-07-30 01:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg67/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg67/>
+{'claim_price': u'\u6302\u724c410\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2013.03.06',
+ 'deal_price': u'408',
+ 'direction': u'\u4e1c \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC84576163.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517112\u5c42) 1994\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u4eac\u5b9d\u82b1\u56ed 3\u5ba41\u5385 162.24\u5e73\u7c73'}
+2017-07-30 01:11:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg66/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg66/>
+{'deal_date': u'2013.05',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0000555096.html',
+ 'position': u'\u672a\u77e5\u697c\u5c42(\u51717\u5c42) 1989\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 --\u5ba4--\u5385 42.73\u5e73\u7c73'}
+2017-07-30 01:11:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg65/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg65/>
+{'claim_price': u'\u6302\u724c650\u4e07',
+ 'deal_date': u'2013.06',
+ 'direction': u'\u5357 \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC85494430.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517118\u5c42) 1996\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u4e0a\u9f99\u897f\u91cc 2\u5ba42\u5385 120.75\u5e73\u7c73'}
+2017-07-30 01:11:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg64/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:11:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg64/>
+{'claim_price': u'\u6302\u724c900\u4e07',
+ 'deal_date': u'2013.08',
+ 'direction': u'\u4e1c \u5357 | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86063011.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517122\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u4e2d\u666f\u6fe0\u5ead 3\u5ba42\u5385 191\u5e73\u7c73'}
+2017-07-30 01:12:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg63/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg63/>
+{'claim_price': u'\u6302\u724c280\u4e07',
+ 'deal_date': u'2013.08.29',
+ 'deal_price': u'278',
+ 'direction': u'\u4e1c \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC85802312.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517112\u5c42) 1988\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5b89\u5916\u5927\u88573\u53f7\u9662 2\u5ba41\u5385 59.55\u5e73\u7c73'}
+2017-07-30 01:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg62/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg62/>
+{'claim_price': u'\u6302\u724c485\u4e07',
+ 'deal_date': u'2013.10',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86055310.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517120\u5c42) 1994\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 3\u5ba41\u5385 87.6\u5e73\u7c73'}
+2017-07-30 01:12:07 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 16 pages/min), scraped 32 items (at 16 items/min)
+2017-07-30 01:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg61/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg61/>
+{'claim_price': u'\u6302\u724c330\u4e07',
+ 'deal_date': u'2013.11.27',
+ 'deal_price': u'318',
+ 'direction': u'\u897f \u5317 | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86062324.html',
+ 'position': u'\u9876\u5c42(\u517116\u5c42) 1994\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 3\u5ba41\u5385 66.33\u5e73\u7c73'}
+2017-07-30 01:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg60/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg60/>
+{'claim_price': u'\u6302\u724c240\u4e07',
+ 'deal_date': u'2014.01',
+ 'direction': u'\u5357 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86818077.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 1979\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 1\u5ba41\u5385 44\u5e73\u7c73'}
+2017-07-30 01:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg59/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg59/>
+{'claim_price': u'\u6302\u724c200\u4e07',
+ 'deal_date': u'2014.02.24',
+ 'deal_price': u'194.2',
+ 'direction': u'\u5357 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87148853.html',
+ 'position': u'\u5e95\u5c42(\u51715\u5c42) 1980\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u4e1c\u91cc 1\u5ba41\u5385 36.7\u5e73\u7c73'}
+2017-07-30 01:12:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg58/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg58/>
+{'claim_price': u'\u6302\u724c280\u4e07',
+ 'deal_date': u'2014.04',
+ 'direction': u'\u5357 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87122613.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u51715\u5c42) 1980\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 52\u5e73\u7c73'}
+2017-07-30 01:12:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg57/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg57/>
+{'deal_date': u'2014.05',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0000574130.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517114\u5c42) 1996\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9752\u5e74\u6e56\u5357\u8857 --\u5ba4--\u5385 70.66\u5e73\u7c73'}
+2017-07-30 01:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg56/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg56/>
+{'claim_price': u'\u6302\u724c322\u4e07',
+ 'deal_date': u'2014.06.08',
+ 'deal_price': u'266',
+ 'direction': u'\u5357 \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86903176.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517120\u5c42) 1994\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 2\u5ba41\u5385 60.83\u5e73\u7c73'}
+2017-07-30 01:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg55/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg55/>
+{'claim_price': u'\u6302\u724c230\u4e07',
+ 'deal_date': u'2014.07.03',
+ 'deal_price': u'220',
+ 'direction': u'\u4e1c \u5317 | \u6bdb\u576f\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC86327550.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 1983\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5916\u897f\u6cb3\u6cbf 2\u5ba41\u5385 50.3\u5e73\u7c73'}
+2017-07-30 01:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg54/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg54/>
+{'claim_price': u'\u6302\u724c245\u4e07',
+ 'deal_date': u'2014.08',
+ 'direction': u'\u4e1c \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87807203.html',
+ 'position': u'\u672a\u77e5\u697c\u5c42(\u517111\u5c42) 1992\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9f13\u697c\u5916\u5927\u885752\u53f7 1\u5ba41\u5385 45\u5e73\u7c73'}
+2017-07-30 01:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg53/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg53/>
+{'claim_price': u'\u6302\u724c220\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2014.09.09',
+ 'deal_price': u'220',
+ 'direction': u'\u4e1c | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87859035.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517114\u5c42) 1989\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5fb7\u8def\u4e5961\u53f7\u9662 1\u5ba41\u5385 43.79\u5e73\u7c73'}
+2017-07-30 01:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg52/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg52/>
+{'claim_price': u'\u6302\u724c477\u4e07',
+ 'deal_date': u'2014.10.09',
+ 'deal_price': u'477',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87756954.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 2\u5ba42\u5385 98.61\u5e73\u7c73'}
+2017-07-30 01:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg51/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg51/>
+{'claim_price': u'\u6302\u724c525\u4e07',
+ 'deal_date': u'2014.10.27',
+ 'deal_price': u'513.1',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87442569.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517112\u5c42) 1980\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u516d\u94fa\u7095 3\u5ba41\u5385 88.71\u5e73\u7c73'}
+2017-07-30 01:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg50/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg50/>
+{'claim_price': u'\u6302\u724c485\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2014.11.28',
+ 'deal_price': u'480',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88437173.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 2\u5ba41\u5385 98.61\u5e73\u7c73'}
+2017-07-30 01:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg49/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg49/>
+{'claim_price': u'\u6302\u724c438\u4e07',
+ 'deal_date': u'2014.12.08',
+ 'deal_price': u'423',
+ 'direction': u'\u4e1c | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88210320.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517116\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u534e\u5e9c\u666f\u56ed 1\u5ba41\u5385 77.33\u5e73\u7c73'}
+2017-07-30 01:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg48/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:12:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg48/>
+{'claim_price': u'\u6302\u724c316\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.01.05',
+ 'deal_price': u'310',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88739906.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 1987\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u91cc\u5317\u885724\u53f7\u9662 2\u5ba41\u5385 54.84\u5e73\u7c73'}
+2017-07-30 01:13:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg47/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg47/>
+{'claim_price': u'\u6302\u724c180\u4e07',
+ 'deal_date': u'2015.02.06',
+ 'deal_price': u'180',
+ 'direction': u'\u5357 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC87426250.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u51715\u5c42) 1980\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u4e1c\u91cc 1\u5ba41\u5385 38.27\u5e73\u7c73'}
+2017-07-30 01:13:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg46/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg46/>
+{'claim_price': u'\u6302\u724c405\u4e07',
+ 'deal_date': u'2015.03.09',
+ 'deal_price': u'402',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88740416.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517117\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 2\u5ba41\u5385 86.2\u5e73\u7c73'}
+2017-07-30 01:13:07 [scrapy.extensions.logstats] INFO: Crawled 49 pages (at 16 pages/min), scraped 48 items (at 16 items/min)
+2017-07-30 01:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg45/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg45/>
+{'claim_price': u'\u6302\u724c240\u4e07',
+ 'deal_date': u'2015.03',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88569072.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u51715\u5c42) 1989\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u4e0a\u9f99\u897f\u91cc 2\u5ba41\u5385 46.63\u5e73\u7c73'}
+2017-07-30 01:13:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg44/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg44/>
+{'claim_price': u'\u6302\u724c515\u4e07',
+ 'deal_date': u'2015.04',
+ 'direction': u'\u4e1c \u5317 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC88215465.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517118\u5c42) 2000\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u4e09\u79c0\u6db5\u96c5 2\u5ba41\u5385 107\u5e73\u7c73'}
+2017-07-30 01:13:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg43/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg43/>
+{'claim_price': u'\u6302\u724c355\u4e07',
+ 'deal_date': u'2015.04.06',
+ 'deal_price': u'352',
+ 'direction': u'\u4e1c \u897f | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89157050.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517116\u5c42) 1994\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 3\u5ba41\u5385 66.33\u5e73\u7c73'}
+2017-07-30 01:13:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg42/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg42/>
+{'claim_price': u'\u6302\u724c272\u4e07',
+ 'deal_date': u'2015.05',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89247884.html',
+ 'position': u'\u9876\u5c42(\u51716\u5c42) 1986\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 56.93\u5e73\u7c73'}
+2017-07-30 01:13:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg41/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg41/>
+{'deal_date': u'2015.05',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0001849868.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517114\u5c42) 1996\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9752\u5e74\u6e56\u5357\u8857 --\u5ba4--\u5385 70.66\u5e73\u7c73'}
+2017-07-30 01:13:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg40/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg40/>
+{'claim_price': u'\u6302\u724c480\u4e07',
+ 'deal_date': u'2015.05.24',
+ 'deal_price': u'480',
+ 'direction': u'\u4e1c \u897f\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJCY89489029.html',
+ 'position': u'\u9876\u5c42(\u517120\u5c42) 1983\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5916\u9986\u4e1c\u885750\u53f7\u9662 2\u5ba42\u5385 80.55\u5e73\u7c73'}
+2017-07-30 01:13:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg39/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg39/>
+{'claim_price': u'\u6302\u724c208\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.06.07',
+ 'deal_price': u'208',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89088058.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 1988\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u5317\u91cc 1\u5ba41\u5385 41.01\u5e73\u7c73'}
+2017-07-30 01:13:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg38/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg38/>
+{'deal_date': u'2015.07',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0000745449.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517118\u5c42) 2000\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u4e09\u79c0\u6db5\u96c5 --\u5ba4--\u5385 97.08\u5e73\u7c73'}
+2017-07-30 01:13:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg37/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg37/>
+{'claim_price': u'\u6302\u724c270\u4e07',
+ 'deal_date': u'2015.07.11',
+ 'deal_price': u'263',
+ 'direction': u'\u5357 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89549023.html',
+ 'position': u'\u9876\u5c42(\u51716\u5c42) 1984\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c18\u53f7\u9662 1\u5ba41\u5385 42.64\u5e73\u7c73'}
+2017-07-30 01:13:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg36/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg36/>
+{'claim_price': u'\u6302\u724c245\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.07.31',
+ 'deal_price': u'243',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89590713.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517111\u5c42) 2001\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u8f66\u8f87\u5e97\u80e1\u540c 1\u5ba40\u5385 38.93\u5e73\u7c73'}
+2017-07-30 01:13:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg35/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg35/>
+{'claim_price': u'\u6302\u724c362\u4e07',
+ 'deal_date': u'2015.08.05',
+ 'deal_price': u'360',
+ 'direction': u'\u4e1c \u5357 \u897f | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC89467673.html',
+ 'position': u'\u9876\u5c42(\u51715\u5c42) 1984\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u548c\u5e73\u91cc\u4e2d\u8857 3\u5ba41\u5385 56.98\u5e73\u7c73'}
+2017-07-30 01:13:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg34/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg34/>
+{'claim_price': u'\u6302\u724c360\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.08.28',
+ 'deal_price': u'360',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90144349.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u51716\u5c42) 1983\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u91cc\u5317\u885724\u53f7\u9662 2\u5ba41\u5385 58.59\u5e73\u7c73'}
+2017-07-30 01:13:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg33/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg33/>
+{'deal_date': u'2015.09',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0000908322.html',
+ 'position': u'\u9876\u5c42(\u51716\u5c42) 1979\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5916\u9986\u4e1c\u885750\u53f7\u9662 --\u5ba4--\u5385 56.51\u5e73\u7c73'}
+2017-07-30 01:13:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg32/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:13:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg32/>
+{'claim_price': u'\u6302\u724c320\u4e07',
+ 'deal_date': u'2015.09.29',
+ 'deal_price': u'312.5',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90233303.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 1990\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 57.9\u5e73\u7c73'}
+2017-07-30 01:14:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg31/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg31/>
+{'claim_price': u'\u6302\u724c440\u4e07',
+ 'deal_date': u'2015.10.22',
+ 'deal_price': u'433',
+ 'direction': u'\u4e1c \u897f | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90560034.html',
+ 'position': u'\u5e95\u5c42(\u51717\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c1\u53f7\u9662 2\u5ba41\u5385 66.69\u5e73\u7c73'}
+2017-07-30 01:14:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg30/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg30/>
+{'claim_price': u'\u6302\u724c980\u4e07',
+ 'deal_date': u'2015.11',
+ 'direction': u'\u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJCY89170916.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517119\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u51ef\u666f\u94ed\u5ea7 2\u5ba42\u5385 179.87\u5e73\u7c73'}
+2017-07-30 01:14:07 [scrapy.extensions.logstats] INFO: Crawled 65 pages (at 16 pages/min), scraped 64 items (at 16 items/min)
+2017-07-30 01:14:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg29/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg29/>
+{'claim_price': u'\u6302\u724c440\u4e07',
+ 'deal_date': u'2015.11.18',
+ 'deal_price': u'430',
+ 'direction': u'\u4e1c | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90626262.html',
+ 'position': u'\u9876\u5c42(\u517119\u5c42) 2006\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u897f\u8425\u623f 2\u5ba41\u5385 85.12\u5e73\u7c73'}
+2017-07-30 01:14:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg28/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg28/>
+{'claim_price': u'\u6302\u724c606\u4e07',
+ 'deal_date': u'2015.12',
+ 'direction': u'\u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90277043.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517116\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u534e\u5e9c\u666f\u56ed 2\u5ba42\u5385 99\u5e73\u7c73'}
+2017-07-30 01:14:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg27/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg27/>
+{'claim_price': u'\u6302\u724c302\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.12.06',
+ 'deal_price': u'299',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90973563.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517112\u5c42) 1988\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u5b89\u5916\u5927\u88573\u53f7\u9662 2\u5ba40\u5385 57.07\u5e73\u7c73'}
+2017-07-30 01:14:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg26/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg26/>
+{'claim_price': u'\u6302\u724c580\u4e07',
+ 'deal_date': u'2015.12.18',
+ 'deal_price': u'572',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90015190.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 1992\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9752\u5e74\u6e56\u5357\u8857 2\u5ba41\u5385 79.41\u5e73\u7c73'}
+2017-07-30 01:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg25/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg25/>
+{'claim_price': u'\u6302\u724c315\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2015.12.29',
+ 'deal_price': u'315',
+ 'direction': u'\u4e1c \u897f | \u7b80\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC90795221.html',
+ 'position': u'\u5e95\u5c42(\u51716\u5c42) 1990\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5fb7\u8def47\u53f7\u9662 2\u5ba41\u5385 60.25\u5e73\u7c73'}
+2017-07-30 01:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg24/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg24/>
+{'claim_price': u'\u6302\u724c470\u4e07',
+ 'deal_date': u'2016.01.12',
+ 'deal_price': u'460',
+ 'direction': u'\u4e1c\u5317 | \u7b80\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91385395.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517114\u5c42) 1991\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u9ec4\u5bfa\u5927\u885728\u53f7\u9662 3\u5ba41\u5385 81.29\u5e73\u7c73'}
+2017-07-30 01:14:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg23/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg23/>
+{'claim_price': u'\u6302\u724c900\u4e07',
+ 'deal_date': u'2016.02',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91861514.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517122\u5c42) 2001\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u4e2d\u666f\u6fe0\u5ead 2\u5ba42\u5385 121.4\u5e73\u7c73'}
+2017-07-30 01:14:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg22/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg22/>
+{'claim_price': u'\u6302\u724c330\u4e07',
+ 'deal_date': u'2016.02.21',
+ 'deal_price': u'330',
+ 'direction': u'\u4e1c | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJCY88828913.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517115\u5c42) 1989\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u9ec4\u5bfa\u5927\u885728\u53f7\u9662 2\u5ba41\u5385 54.42\u5e73\u7c73'}
+2017-07-30 01:14:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg6/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg6/>
+{'claim_price': u'\u6302\u724c1340\u4e07 \u6210\u4ea4\u5468\u671f14\u5929',
+ 'deal_date': u'2016.12.13',
+ 'deal_price': u'1300',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101100902790.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u51716\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b98\u4e66\u9662 3\u5ba41\u5385 122.88\u5e73\u7c73'}
+2017-07-30 01:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg5/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg5/>
+{'claim_price': u'\u6302\u724c615\u4e07 \u6210\u4ea4\u5468\u671f106\u5929',
+ 'deal_date': u'2017.01.07',
+ 'deal_price': u'615',
+ 'direction': u'\u4e1c\u5357 | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101100623113.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517120\u5c42) 1982\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5916\u4e1c\u6cb3\u6cbf 2\u5ba41\u5385 58.97\u5e73\u7c73'}
+2017-07-30 01:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg4/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg4/>
+{'claim_price': u'\u6302\u724c735\u4e07 \u6210\u4ea4\u5468\u671f238\u5929',
+ 'deal_date': u'2017.02.08',
+ 'deal_price': u'735',
+ 'direction': u'\u5357 \u5317 | \u7b80\u88c5',
+ 'link': u'https://bj.lianjia.com/chengjiao/101100185385.html',
+ 'position': u'\u9876\u5c42(\u51715\u5c42) 1982\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c5\u53f7\u9662 3\u5ba41\u5385 57\u5e73\u7c73'}
+2017-07-30 01:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg3/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg3/>
+{'claim_price': u'\u6302\u724c480\u4e07 \u6210\u4ea4\u5468\u671f3\u5929',
+ 'deal_date': u'2017.02.26',
+ 'deal_price': u'480',
+ 'direction': u'\u4e1c | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101101224912.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517110\u5c42) 1992\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9752\u5e74\u6e56\u5357\u8857 1\u5ba41\u5385 48.67\u5e73\u7c73'}
+2017-07-30 01:14:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg2/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/chengjiao/andingmen/pg2/>
+{'claim_price': u'\u6302\u724c1150\u4e07 \u6210\u4ea4\u5468\u671f2\u5929',
+ 'deal_date': u'2017.03.12',
+ 'deal_price': u'1150',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101101315415.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517110\u5c42) 2000\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u6e56\u666f\u82d1 2\u5ba41\u5385 88.75\u5e73\u7c73'}
+2017-07-30 01:14:55 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-30 01:14:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 41739,
+ 'downloader/request_count': 79,
+ 'downloader/request_method_count/GET': 79,
+ 'downloader/response_bytes': 1561917,
+ 'downloader/response_count': 79,
+ 'downloader/response_status_count/200': 78,
+ 'downloader/response_status_count/301': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 30, 1, 14, 55, 440738),
+ 'item_scraped_count': 77,
+ 'log_count/DEBUG': 157,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 75214848,
+ 'memusage/startup': 43184128,
+ 'request_depth_max': 1,
+ 'response_received_count': 78,
+ 'scheduler/dequeued': 79,
+ 'scheduler/dequeued/memory': 79,
+ 'scheduler/enqueued': 79,
+ 'scheduler/enqueued/memory': 79,
+ 'start_time': datetime.datetime(2017, 7, 30, 1, 10, 7, 852066)}
+2017-07-30 01:14:55 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-30 01:34:20 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: lianjia)
+2017-07-30 01:34:20 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'lianjia.spiders', 'SPIDER_MODULES': ['lianjia.spiders'], 'LOG_FILE': 'log.txt', 'BOT_NAME': 'lianjia'}
+2017-07-30 01:34:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-07-30 01:34:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-30 01:34:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-30 01:34:20 [py.warnings] WARNING: /usr/lib/python2.7/site-packages/pkg_resources.py:1054: UserWarning: /home/jasson/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+  warnings.warn(msg, UserWarning)
+
+2017-07-30 01:34:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['lianjia.pipelines.LianjiaPipeline']
+2017-07-30 01:34:20 [scrapy.core.engine] INFO: Spider opened
+2017-07-30 01:34:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-30 01:34:20 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-30 01:34:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://bj.lianjia.com/chengjiao/andingmen/> from <GET https://bj.lianjia.com/chengjiao/andingmen>
+2017-07-30 01:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/> (referer: None)
+2017-07-30 01:34:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg1/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:29 [scrapy.core.scraper] ERROR: Error processing {'claim_price': u'\u6302\u724c930\u4e07 \u6210\u4ea4\u5468\u671f14\u5929',
+ 'deal_date': u'2017.03.28',
+ 'deal_price': u'916',
+ 'direction': u'\u5357 \u5317 | \u5176\u4ed6\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/101101335310.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51717\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u6c38\u5eb7\u80e1\u540c1\u53f7\u9662 2\u5ba41\u5385 67.19\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg21/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:32 [scrapy.core.scraper] ERROR: Error processing {'deal_date': u'2016.03',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0001649312.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u517111\u5c42) 1983\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b89\u5916\u897f\u6cb3\u6cbf --\u5ba4--\u5385 47.67\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg20/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:35 [scrapy.core.scraper] ERROR: Error processing {'claim_price': u'\u6302\u724c500\u4e07',
+ 'deal_date': u'2016.03.12',
+ 'deal_price': u'499',
+ 'direction': u'\u4e1c \u5357 | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91622875.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517114\u5c42) 1989\u5e74\u5efa\u5854\u697c',
+ 'title': u'\u5b89\u5fb7\u8def\u4e5961\u53f7\u9662 2\u5ba41\u5385 64.32\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg19/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:37 [scrapy.core.scraper] ERROR: Error processing {'deal_date': u'2016.04',
+ 'direction': u'\u6682\u65e0\u6570\u636e | \u5176\u4ed6\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJ0001849318.html',
+ 'position': u'\u4e2d\u697c\u5c42(\u517111\u5c42) 2001\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u8f66\u8f87\u5e97\u80e1\u540c --\u5ba4--\u5385 54.15\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg18/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:41 [scrapy.core.scraper] ERROR: Error processing {'claim_price': u'\u6302\u724c385\u4e07 \u6210\u4ea4\u5468\u671f1\u5929',
+ 'deal_date': u'2016.04.24',
+ 'deal_price': u'385',
+ 'direction': u'\u4e1c \u897f | \u7cbe\u88c5\xa0| \u6709\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC91950871.html',
+ 'position': u'\u9ad8\u697c\u5c42(\u517111\u5c42) 1992\u5e74\u5efa\u677f\u5854\u7ed3\u5408',
+ 'title': u'\u9f13\u697c\u5916\u5927\u885752\u53f7 1\u5ba41\u5385 44.38\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/chengjiao/andingmen/pg17/> (referer: https://bj.lianjia.com/chengjiao/andingmen/)
+2017-07-30 01:34:45 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-07-30 01:34:45 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-07-30 01:34:45 [scrapy.core.scraper] ERROR: Error processing {'claim_price': u'\u6302\u724c1020\u4e07',
+ 'deal_date': u'2016.05.28',
+ 'deal_price': u'1010',
+ 'direction': u'\u5357 \u5317 | \u7cbe\u88c5\xa0| \u65e0\u7535\u68af',
+ 'link': u'https://bj.lianjia.com/chengjiao/BJDC92098561.html',
+ 'position': u'\u4f4e\u697c\u5c42(\u51716\u5c42) 2002\u5e74\u5efa\u677f\u697c',
+ 'title': u'\u5b98\u4e66\u9662 3\u5ba41\u5385 122.62\u5e73\u7c73'}
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/jasson/workspace/lianjiadata/lianjia/pipelines.py", line 41, in process_item
+    insert(item)
+NameError: global name 'insert' is not defined
+2017-07-30 01:34:47 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown

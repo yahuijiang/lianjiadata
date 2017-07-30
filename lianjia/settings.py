@@ -15,6 +15,7 @@ SPIDER_MODULES = ['lianjia.spiders']
 NEWSPIDER_MODULE = 'lianjia.spiders'
 
 #LOG_LEVEL="ERROR"
+#LOG_FILE="log.txt"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'lianjia (+http://www.yourdomain.com)'
 
