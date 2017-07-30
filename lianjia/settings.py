@@ -14,7 +14,7 @@ BOT_NAME = 'lianjia'
 SPIDER_MODULES = ['lianjia.spiders']
 NEWSPIDER_MODULE = 'lianjia.spiders'
 
-
+#LOG_LEVEL="ERROR"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'lianjia (+http://www.yourdomain.com)'
 
@@ -68,8 +68,13 @@ MYSQL_PASSWD = '123456'
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'lianjia.pipelines.LianjiaPipeline': 300,
+ITEM_PIPELINES = {
+    'lianjia.pipelines.LianjiaPipeline': 300,
+}
+
+#DOWNLOADER_MIDDLEWARES = {
+#        'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware' : None,
+#        'Crawler.comm.rotate_useragent.RotateUserAgentMiddleware' :400
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
