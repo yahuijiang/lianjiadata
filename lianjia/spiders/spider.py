@@ -44,7 +44,14 @@ class LianjiaSpider(CrawlSpider):
 #    conn = mdb.connect("localhost","root","123456")
     # custom_settings = {'HTTPCACHE_ENABLED': True}
     #start_urls = ['https://bj.lianjia.com/chengjiao/andingmen']
-    start_urls = ['https://bj.lianjia.com/chengjiao/anzhen1/p1p2p3p4']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/anzhen1/p1p2p3p4']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/anzhen1/p5p6p7p8']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/chongwenmen']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/chaoyangmenwai1/']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/chaoyangmenwai1/']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc4lc1p1/']
+    #start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc2p1/']
+    start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc3lc5p1/']
 
     #rules = (
     #    Rule(SgmlLinkExtractor(allow='/chengjiao/pinggu/'), callback='next_page'),
