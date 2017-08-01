@@ -51,6 +51,7 @@ class LianjiaSpider(CrawlSpider):
     #start_urls = ['https://bj.lianjia.com/chengjiao/chaoyangmenwai1/']
     #start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc4lc1p1/']
     #start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc2p1/']
+    currenturl = self.getCurrentUrl()
     start_urls = ['https://bj.lianjia.com/chengjiao/haidian/lc3lc5p1/']
 
     #rules = (
@@ -63,8 +64,8 @@ class LianjiaSpider(CrawlSpider):
         page_data = response.xpath('//@page-data').extract_first()
         total_page = eval(page_data)['totalPage']
 	print total_page
-        for page in range(1, total_page + 1):
-#	    time.sleep(2)
+        #for page in range(1, total_page + 1):
+        for page in range(1, 2):
             rel_url = page_url.format(page=page)
 	    url = response.urljoin(rel_url)
 	    print "the second request url is: "+url
@@ -98,7 +99,16 @@ class LianjiaSpider(CrawlSpider):
 	    items.append(item)
 	    #print "in parse_item: "+len(items)
           return items
-
+     def getCurrentUrl():
+	item = json.loads("/home/jasson/links")
+        with open("./data/"+f) as json_file:
+             for line in json_file:
+		item = json.loads(line)
+		if item["done"]=="yes":
+			continue
+		else:
+			return item["link"]
+		
 
 #if __name__ == '__main__':
 #    from scrapy import cmdline
